@@ -1,0 +1,6 @@
+{
+  "input": "./mcss",
+  "outport": "./css",
+  "format": 1,
+  "watch": 2
+}
