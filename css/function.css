@@ -1,0 +1,38 @@
+body{
+	*zoom:1;
+	height:5px;
+	width:5px;
+}
+body:before,body:after{
+	display:table;
+	content:"";
+	line-height:0;
+}
+body:after{
+	clear:both;
+}
+body{
+	-webkit-border-radius:10px 20px;
+	-moz-border-radius:10px 20px;
+	border-radius:10px 20px;
+	-webkit-border-radius:10px 20px 100% / 20px;
+	-moz-border-radius:10px 20px 100% / 20px;
+	border-radius:10px 20px 100% / 20px;
+}
+body{
+	named:30px;
+	default-param:30px;
+	rest-at-middle:2,3;
+	rest-at-left:1,2,3;
+	rest-at-right:2,3,4;
+}
+body{
+	position:absolute;
+	left:20px;
+	top:10px;
+}
+body{
+	first:10px;
+	seconed:20px;
+	arguments:10px,20px;
+}
