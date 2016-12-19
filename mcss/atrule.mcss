@@ -1,0 +1,50 @@
+// 1. @extend
+.class-1 span{
+    name: class-1;
+}
+.body-1{
+    // need specify the full complex selector
+    // if only `span` will not work( but work in scss)
+    @extend .class-1 span;
+}
+// 有作用域
+class-1{
+    name: class-1 in global;
+}
+
+div.body-4, .other-body{
+    class-1{
+        name: class-1 in body-4;
+    }
+    // base class has scope
+    @extend class-1;
+}
+// 支持多重extend
+.class-1{
+    name: class-1 in global;
+}
+.class-2{
+    name: class-2 in global;
+}
+body{
+  .class-3{
+    name: class-3 in local;
+  }
+  @extend .class-1, .class-2, .class-3;
+}
+// 支持nested extend
+.class-3{
+  name: class-3 in global;
+}
+
+.class-2{
+  name: class-2 in global;
+  @extend .class-3;
+}
+.class-1{
+  name: class-1 in global;
+  @extend .class-2;
+}
+body{
+  @extend .class-1;
+}

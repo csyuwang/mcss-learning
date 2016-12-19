@@ -1,0 +1,27 @@
+.class-1 span,.body-1{
+	name:class-1;
+}
+class-1{
+	name:class-1 in global;
+}
+div.body-4 class-1,.other-body class-1,div.body-4,.other-body{
+	name:class-1 in body-4;
+}
+.class-1,body,body{
+	name:class-1 in global;
+}
+.class-2,body,.class-1,body{
+	name:class-2 in global;
+}
+body .class-3,body{
+	name:class-3 in local;
+}
+.class-3,.class-2,.class-1,body{
+	name:class-3 in global;
+}
+.class-2,.class-1,body{
+	name:class-2 in global;
+}
+.class-1,body{
+	name:class-1 in global;
+}
