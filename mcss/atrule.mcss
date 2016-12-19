@@ -48,3 +48,29 @@ body{
 body{
   @extend .class-1;
 }
+
+// 2.@import
+// import in global
+@import './_markdown.mcss';
+
+.m-markdown {
+    // import in block
+    left: 20px;
+    @import './_markdown.mcss';
+}
+
+// import as media type
+@import './_markdown.mcss' screen and (max-width: 200px);
+
+// import raw css
+@import './_raw.css';
+
+// 3.@abstract
+@abstract abs1{
+    name: abs1;
+}
+body{
+    // then abs1 exports
+    @extend abs1;
+    left: 10px;
+}
